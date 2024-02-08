@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #yes {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        #no {
+            background-color: #ff6262;
+            color: #fff;
+        }
+
+        video {
+            display: none;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h2>Valentine's Day Proposal</h2>
+    <p>Hi there! Would you be my Valentine this year?</p>
+    <button id="yes" onclick="sendResponse('Yes')">Yes</button>
+    <button id="no" onclick="sendResponse('No')">No</button>
+    <video id="valentineVideo" controls>
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    function sendResponse(response) {
+        if (response === 'Yes') {
+            document.getElementById('valentineVideo').style.display = 'block';
+            document.getElementById('valentineVideo').play();
+            alert('Yayyyyyy! Happy Valentine\'s Day! ❤️');
+        } else {
+            window.location.href = 'lil.html'; // Change this to the desired page for "No" response
+        }
+    }
+</script>
+
+</body>
+</html>
