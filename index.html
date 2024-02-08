@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nothing much </title>
+    <title>Valentine's Day Proposal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,10 +57,10 @@
 
 <div id="container">
     <h2>Valentine's Day Proposal</h2>
-    <p>Hello liliput would you like to be my Valentine this year and most probably next and next and next and every year from now on?</p>
+    <p>Hello liliput would you like to be my valentine this year and probably next and next and next and every year from now on? </p>
     <button id="yes" onclick="sendResponse('Yes')">Yes</button>
     <button id="no" onclick="sendResponse('No')">No</button>
-    <video id="valentineVideo" controls>
+    <video id="valentineVideo" loop>
         <source src="vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -71,7 +71,7 @@
         if (response === 'Yes') {
             document.getElementById('valentineVideo').style.display = 'block';
             document.getElementById('valentineVideo').play();
-            alert('Yayyyyyy!❤️ SS bhejdena pta nahi chalega backend nahi hai');
+            alert('Yayyyyyy!❤️ SS bhejdena answer ka backend nahi hai pta nahi chalega');
         } else {
             window.location.href = 'index.html'; // Change this to the desired page for "No" response
         }
